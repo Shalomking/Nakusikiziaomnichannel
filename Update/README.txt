@@ -1,0 +1,1 @@
+Update instructions can be viewed here: https://docs.titansystems.ph/zender/updation/system/

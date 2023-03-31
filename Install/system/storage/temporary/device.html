@@ -1,0 +1,137 @@
+<div class="app-header padding-middle background-primer">
+    <div class="container text-center">
+        <div class="row row-no-margin-bottom">
+            <img src="assets/images/logo.png" class="app-logo" />
+        </div>
+    </div>
+</div>
+
+<div class="border-radius-style background-circle background-primer">
+    <div class="container">
+        <div class="background-white border-radius padding-box-middle box-shadow">
+            <div class="row row-no-margin-bottom">
+                <div class="col-55" zender-intro="device">
+                    <div class="device-icon float-left margin-right-small">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="device-info overflow-hidden">
+                        <h6><zender device-model></zender></h6>
+                        <p><i class="fa fa-times-circle color-red"></i> <zender device-status></zender></p>
+                    </div>
+                </div>
+
+                <div class="col-45">
+                    <button class="buttons auth-button float-right letter-spacing margin-top-small login-screen-open" data-login-screen=".login-screen" zender-intro="link" zender-btn-login>
+                        <i class="fa fa-sign-in-alt"></i>
+                    </button>
+
+                    <button class="buttons auth-button float-right letter-spacing margin-top-small" zender-btn-logout>
+                        <i class="fa fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="separator-big"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="background-white text-center border-radius padding-box box-shadow" zender-intro="switch">
+                <span class="icon-big icon-color-red" zender-switch-icon><i class="fa fa-podcast"></i></span>
+                <h6>
+                    <label class="toggle">
+                        <input type="checkbox" zender-switch>
+                        <span class="toggle-icon"></span>
+                    </label>
+                </h6>
+            </div>
+        </div>
+        <div class="col">
+            <div class="background-white text-center border-radius padding-box box-shadow" zender-intro="notification">
+                <span class="icon-big icon-color-red" zender-notification-icon><i class="fa fa-bell"></i></span>
+                <h6>
+                    <label class="toggle">
+                        <input type="checkbox" zender-notification>
+                        <span class="toggle-icon"></span>
+                    </label>
+                </h6>
+            </div>
+        </div>
+        <div class="col">
+            <div class="background-white text-center border-radius padding-box box-shadow" zender-intro="exit" zender-close>
+                <span class="icon-big icon-color-red"><i class="fa fa-power-off"></i></span>
+                <h6 id="lang-exit" class="font-weight-500"></h6>
+            </div>
+        </div>
+    </div>
+
+    <div zender-terminal zender-intro="terminal"></div>
+
+    <div class="fab fab-right-bottom" zender-intro="fab">
+        <a href="#">
+            <i class="fa fa-cubes fa-lg"></i>
+            <i class="fa fa-chevron-circle-down fa-lg"></i>
+        </a>
+        <div class="fab-buttons fab-buttons-top">
+            <a class="fab-label-button" href="#" zender-popup="background">
+                <span>
+                    <i class="fa fa-book fa-lg"></i>
+                </span>
+                <span class="fab-label" zender-lang="run_background">Run in Background</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div zender-bottom></div>
+
+<div class="login-screen">
+    <div class="view">
+        <div class="page">
+            <div class="page-content login-screen-content">
+                <div class="login-screen-title">
+                    <img src="assets/images/logo-login.png" />
+                </div>
+
+                <form class="login-form" zender-login>
+                    <div class="list">
+                        <ul>
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-input-wrap">
+                                        <input type="text" name="email" placeholder="Email Address" zender-lang="input_email">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item-content item-input">
+                                <div class="item-inner">
+                                    <div class="item-input-wrap">
+                                        <input type="password" name="password" placeholder="Password" zender-lang="input_password">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="list">
+                        <ul class="text-align-center">
+                            <li>
+                                <button type="submit" class="list-button button button-outline button-raised" zender-lang="btn_login">Login</button>
+                                <a href="#" class="list-button text-color-gray text-uppercase" zender-lang="text_or">or</a>
+                                <button type="button" class="list-button button button-outline button-raised" zender-scan zender-lang="btn_scan">Scan QRCode</button>
+                            </li>
+                        </ul>
+
+                        <div class="block-footer">
+                            <a href="#" class="link login-screen-close button button-small" zender-lang="btn_cancel">Cancel</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

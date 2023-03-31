@@ -1,0 +1,1 @@
+The migration guide can be viewed here: https://docs.titansystems.ph/zender/updation/migration/

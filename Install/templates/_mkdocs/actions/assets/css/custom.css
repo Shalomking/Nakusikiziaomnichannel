@@ -1,0 +1,27 @@
+nav {
+	display: none;
+}
+
+.navbar {
+	display: none;
+}
+
+.metadata {
+	display: none;
+}
+
+.sticky-offset {
+	top: 0;
+}
+
+footer hr {
+	display: none;
+}
+
+img {
+	width: 100%;
+}
+
+#content {
+	padding-top: 0;
+}
